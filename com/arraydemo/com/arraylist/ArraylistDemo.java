@@ -1,7 +1,6 @@
 package com.arraydemo.com.arraylist;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class ArraylistDemo{
