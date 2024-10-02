@@ -1,25 +1,42 @@
-package arraydemo;
+package  arraydemo;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoDimensionalArray {
     public static void main(String[] args) {
 
-        int [][] arr = new int[3][4];
 
+        int [][] arr = new int[3][3];
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter inputs");
+        System.out.println("Enter input ");
 
-        for(int i = 0; i < 3; i++){
-            for (int j = 0; j < 4; j++){
-                arr[i][j] = input.nextInt();
+//        input
+
+        for (int row = 0; row < arr.length; row++){
+            for (int col = 0; col < arr[row].length; col++){
+                arr[row][col] = input.nextInt();
             }
         }
 
-        for(int i = 0 ; i < 3; i++){
-            for (int j = 0; j < 4; j++){
-                System.out.print(arr[i][j] + " ");
-            }
+//        output
+
+//        for (int row = 0 ; row < arr.length; row++){
+//            for (int col = 0 ; col < arr[row].length; col++){
+//                System.out.print(arr[row][col] + " ");
+//            }
+//            System.out.println();
+//        }
+
+//        or
+
+        for (int [] rows : arr){
+//            for (int values : rows){
+//                System.out.print(values + " ");
+//            }
+//            or
+            System.out.println(Arrays.toString(rows));
+
             System.out.println();
         }
     }
