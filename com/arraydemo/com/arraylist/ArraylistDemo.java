@@ -8,7 +8,7 @@ public class ArraylistDemo{
     public static void main(String[] args){
 
  //     Initializing an array list of Integer :
-        ArrayList<Integer> list =  new ArrayList<Integer>(5);
+        ArrayList<Integer> list =  new ArrayList<>(5);
 
         //adding elements to arraylist :
         list.add(11);
