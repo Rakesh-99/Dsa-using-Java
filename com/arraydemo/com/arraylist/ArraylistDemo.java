@@ -30,8 +30,8 @@ public class ArraylistDemo{
 
         //removing index of 0 :
 
-        list.remove(0);
-        System.out.println(list);   // Printing list after removing
+//        list.remove(0);
+//        System.out.println(list);   // Printing list after removing
 
         // set another value in specified index :
 
