@@ -11,6 +11,11 @@ public class MaxElement {
     }
 
     public static int findMaxElem(int[] nums) {
+
+        if(nums == null){
+            return  -1;
+        };
+
         int findMax = Integer.MIN_VALUE;
 //
 //        for (int i = 0; i < nums.length; i++){
