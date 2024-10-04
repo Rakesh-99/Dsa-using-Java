@@ -1,6 +1,6 @@
 package com.searching;
 
-public class FindMinNumber {
+public class MinElement {
     public static void main (String[] args){
 
         int[] arr = { 87, 22, 89, 70, 1, 0, -5};
