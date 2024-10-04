@@ -1,5 +1,4 @@
-package com.arraydemo;
-import java.util.Arrays;
+package com.searching;
 
 public class MaxElement {
     public static void main(String[] args){
