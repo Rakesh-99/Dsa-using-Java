@@ -24,33 +24,63 @@ package com.leetcode;
 
 
 
-public class EvenDigits {
+//Solution 1
 
-    int count;
+public class EvenDigits {
 
     public static void main(String[] args) {
 
         int[] nums = {12, 345, 2, 6, 7896, 212121, 121};
 
-        int res = getEvenDigits(nums);
+       int res =  findEvenNum(nums);
         System.out.println(res);
     }
 
-    public static int getEvenDigits(int[] nums){
+    public static int findEvenNum(int[] nums){
+        int count = 0;
 
-        EvenDigits obj = new EvenDigits();
-        obj.count = 0;
+        for (int num : nums){
+            String str = num + "";
 
-        for (int num : nums) {
-            checkEven(num , obj);
+            if (str.length() % 2 == 0){
+                count ++ ;
+            }
         }
-        return obj.count;
+        return count;
     }
+};
 
-    public static void checkEven(int num, EvenDigits obj) {
-        String str = num + "";
-        if (str.length() % 2 == 0){
-            obj.count ++;
-        }
-    }
-}
+
+
+//Solution 2
+
+//public class EvenDigits {
+//
+//    int count;
+//
+//    public static void main(String[] args) {
+//
+//        int[] nums = {12, 345, 2, 6, 7896, 212121, 121};
+//
+//        int res = getEvenDigits(nums);
+//        System.out.println(res);
+//    }
+//
+//    public static int getEvenDigits(int[] nums){
+//
+//        EvenDigits obj = new EvenDigits();
+//        obj.count = 0;
+//
+//        for (int num : nums) {
+//            checkEven(num , obj);
+//        }
+//        return obj.count;
+//    }
+//
+//    public static void checkEven(int num, EvenDigits obj) {
+//        String str = num + "";
+//        if (str.length() % 2 == 0){
+//            obj.count ++;
+//        }
+//    }
+//}
