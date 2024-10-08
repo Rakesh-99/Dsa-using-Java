@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.array;
 
 
 //Question - https://leetcode.com/problems/richest-customer-wealth/description
