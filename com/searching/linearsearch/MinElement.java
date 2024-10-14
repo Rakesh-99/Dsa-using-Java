@@ -1,4 +1,4 @@
-package com.searching;
+package com.searching.linearsearch;
 
 public class MinElement {
     public static void main (String[] args){
